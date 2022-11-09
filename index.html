@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <style>
+    body,
+    html,
+    img {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cameraImg = document.querySelector('img#camera');
+      setInterval(() => (cameraImg.src = "api/camera-pipe.php" + new Date().getTime()), 1000);
+    });
+  </script>
+</head>
+
+<body>
+  <img id="camera" src="api/camera-pipe.php" />
+</body>
+
+</html>
