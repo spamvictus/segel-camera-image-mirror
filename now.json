@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/camera-pipe.php": {
-      "runtime": "now-php@0.0.7"
-    }
-  }
-}
